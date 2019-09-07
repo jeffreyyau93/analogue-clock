@@ -1,24 +1,50 @@
 <!DOCTYPE html>
 <html lang="zh-tw">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="css/style.css">
-    <script src="js/script.js"></script>
-    <title>Analogue Clock</title>
-</head>
-<body>
-    <div class="circle">
-        <div class="zmin">
-            <div class="jmin"></div>
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+        <link rel="stylesheet" href="css/style.css" />
+        <script src="js/script.js"></script>
+        <title>Analogue Clock</title>
+    </head>
+    <body>
+        <div class="circle">
+            <div class="zmin1">
+                <div class="jmin1"></div>
+            </div>
+            <div class="zhour1">
+                <div class="jhour1"></div>
+            </div>
+            <div class="zsec1">
+                <div class="jsec1"></div>
+            </div>
+            <h3>CSS Animation+雙DIV<br />表示法</h3>
         </div>
-        <div class="zhour">
-            <div class="jhour"></div>
+        <div class="circle">
+            <div class="jmin2"></div>
+            <div class="jhour2"></div>
+            <div class="jsec2"></div>
+            <h3>CSS Animation+圖片<br />表示法</h3>
         </div>
-        <div class="zsec">
-            <div class="jsec"></div>
+        <div class="circle">
+            <div class="jmin1 omin3"></div>
+            <div class="jhour1 ohour3"></div>
+            <div class="jsec1 osec3"></div>
+            <h3>CSS Animation+中心偏移<br />表示法</h3>
         </div>
-    </div>
-</body>
+        <div class="circle">
+            <div class="jmin1 omin4"></div>
+            <div class="jhour1 ohour4"></div>
+            <div class="jsec1 osec4" style="transform: rotate(90deg)"></div>
+            <h3>setInterval+中心偏移<br />表示法</h3>
+        </div>
+        <div class="circle">
+            <div class="jmin1 omin4"></div>
+            <div class="jhour1 ohour4"></div>
+            <div class="jsec1 osec4" style="transform: rotate(90deg)"></div>
+            <h3>setInterval+中心偏移<br />表示法</h3>
+            <button onclick="ctrl(this)">STOP</button>
+        </div>
+    </body>
 </html>

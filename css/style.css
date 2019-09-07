@@ -1,13 +1,18 @@
 body {
     margin: 0;
-    background: #333;
+    background: #ccc;
     text-align: center;
+}
+
+h3 {
+    position: relative;
+    z-index: 999;
 }
 
 .circle {
     width: 300px;
     height: 300px;
-    background: #fff;
+    background: white;
     margin: 20px;
     padding: 20px;
     border-radius: 300px;
@@ -16,7 +21,7 @@ body {
     position: relative;
 }
 
-.jsec {
+.jsec1 {
     width: 4px;
     height: 50%;
     background: #f00;
@@ -26,7 +31,7 @@ body {
     margin-left: -2px;
 }
 
-.jmin {
+.jmin1 {
     width: 10px;
     height: 45%;
     background: #0f0;
@@ -36,7 +41,7 @@ body {
     margin-left: -5px;
 }
 
-.jhour {
+.jhour1 {
     width: 10px;
     height: 30%;
     background: #00f;
@@ -46,7 +51,7 @@ body {
     margin-left: -5px;
 }
 
-.zsec {
+.zsec1 {
     width: 300px;
     height: 300px;
     animation: j_s 60s infinite linear;
@@ -54,7 +59,7 @@ body {
     position: absolute;
 }
 
-.zmin {
+.zmin1 {
     width: 300px;
     height: 300px;
     animation: j_m 3600s infinite linear;
@@ -62,10 +67,42 @@ body {
     position: absolute;
 }
 
-.zhour {
+.zhour1 {
     width: 300px;
     height: 300px;
     animation: j_h 43200s infinite linear;
     /* animation: j_h 720s infinite linear; */
+    position: absolute;
+}
+.jsec2 {
+    width: 16px;
+    height: 300px;
+    position: absolute;
+    background: url("../img/imgs.png");
+    left: 50%;
+    margin-left: -8px;
+    animation: j_s 60s infinite linear;
+}
+.jmin2 {
+    width: 16px;
+    height: 300px;
+    position: absolute;
+    background: url("../img/imgm.png");
+    left: 50%;
+    margin-left: -8px;
+    animation: j_s 3600s infinite linear;
+}
+.jhour2 {
+    width: 16px;
+    height: 300px;
+    position: absolute;
+    background: url("../img/imgh.png");
+    left: 50%;
+    margin-left: -8px;
+    animation: j_s 43200s infinite linear;
+}
+.osec3 {
+    width: 16px;
+    height: 300px;
     position: absolute;
 }
