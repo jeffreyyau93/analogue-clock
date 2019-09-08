@@ -1,5 +1,4 @@
 body {
-    margin: 0;
     background: #ccc;
     text-align: center;
 }
@@ -90,7 +89,7 @@ h3 {
     background: url("../img/imgm.png");
     left: 50%;
     margin-left: -8px;
-    animation: j_s 3600s infinite linear;
+    animation: j_m 3600s infinite linear;
 }
 .jhour2 {
     width: 16px;
@@ -99,10 +98,26 @@ h3 {
     background: url("../img/imgh.png");
     left: 50%;
     margin-left: -8px;
-    animation: j_s 43200s infinite linear;
+    animation: j_h 43200s infinite linear;
 }
 .osec3 {
-    width: 16px;
-    height: 300px;
-    position: absolute;
+    animation: j_s 60s infinite linear;
+    transform-origin: 50% 90%;
+}
+.omin3 {
+    animation: j_m 3600s infinite linear;
+    transform-origin: 50% 85%;
+}
+.ohour3 {
+    animation: j_h 43200s infinite linear;
+    transform-origin: 50% 80%;
+}
+.osec4 {
+    transform-origin: 50% 90%;
+}
+.omin4 {
+    transform-origin: 50% 85%;
+}
+.ohour4 {
+    transform-origin: 50% 80%;
 }

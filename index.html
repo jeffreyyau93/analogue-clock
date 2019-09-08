@@ -36,15 +36,44 @@
         <div class="circle">
             <div class="jmin1 omin4"></div>
             <div class="jhour1 ohour4"></div>
-            <div class="jsec1 osec4" style="transform: rotate(90deg)"></div>
+            <div class="jsec1 osec4"></div>
             <h3>setInterval+中心偏移<br />表示法</h3>
+            <button id="ctrl" onclick="ctl(this)">STOP</button>
         </div>
-        <div class="circle">
-            <div class="jmin1 omin4"></div>
-            <div class="jhour1 ohour4"></div>
-            <div class="jsec1 osec4" style="transform: rotate(90deg)"></div>
-            <h3>setInterval+中心偏移<br />表示法</h3>
-            <button onclick="ctrl(this)">STOP</button>
-        </div>
+        <script>
+            document.getElementsByClassName("osec4")[0].style.transform =
+                "rotate(" + x + "deg)";
+            document.getElementsByClassName("omin4")[0].style.transform =
+                "rotate(" + y + "deg)";
+            document.getElementsByClassName("ohour4")[0].style.transform =
+                "rotate(" + z + "deg)";
+            var loop = setInterval(overwritetime, 1000);
+
+            function overwritetime() {
+                time = new Date();
+                pos_s = time.getSeconds();
+                pos_m = time.getMinutes();
+                pos_h = time.getHours();
+                x = pos_s * 6;
+                y = pos_m * 6;
+                z = pos_h * 30 + pos_m * 0.5;
+                document.getElementsByClassName("osec4")[0].style.transform =
+                    "rotate(" + x + "deg)";
+                document.getElementsByClassName("omin4")[0].style.transform =
+                    "rotate(" + y + "deg)";
+                document.getElementsByClassName("ohour4")[0].style.transform =
+                    "rotate(" + z + "deg)";
+            }
+
+            function ctl(who) {
+                if (who.textContent != "PLAY") {
+                    clearInterval(loop);
+                    who.textContent = "PLAY";
+                } else {
+                    loop = setInterval(overwritetime, 1000);
+                    who.textContent = "STOP";
+                }
+            }
+        </script>
     </body>
 </html>
