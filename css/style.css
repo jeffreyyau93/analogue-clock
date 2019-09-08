@@ -1,123 +1,72 @@
 body {
-    background: #ccc;
-    text-align: center;
-}
-
-h3 {
-    position: relative;
-    z-index: 999;
+    margin: 0;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .circle {
-    width: 300px;
-    height: 300px;
-    background: white;
+    width: 600px;
+    height: 600px;
     margin: 20px;
-    padding: 20px;
-    border-radius: 300px;
+    border-radius: 600px;
     display: inline-block;
     overflow: hidden;
-    position: relative;
+    position: absolute;
 }
 
-.jsec1 {
-    width: 4px;
+.jsec {
+    width: 10px;
     height: 50%;
-    background: #f00;
+    background: #f000;
+    border-top: 40px solid #555;
     position: absolute;
     left: 50%;
-    top: 5%;
-    margin-left: -2px;
+    /* top: 5%; */
+    margin-left: -5px;
 }
 
-.jmin1 {
-    width: 10px;
+.jmin {
+    width: 15px;
     height: 45%;
-    background: #0f0;
+    background: #0f00;
+    border-top: 40px solid #555;
     position: absolute;
     left: 50%;
     top: 10%;
     margin-left: -5px;
 }
 
-.jhour1 {
-    width: 10px;
+.jhour {
+    width: 20px;
     height: 30%;
-    background: #00f;
+    background: #00f0;
+    border-top: 40px solid #555;
     position: absolute;
     left: 50%;
-    top: 25%;
+    top: 20%;
     margin-left: -5px;
 }
 
-.zsec1 {
-    width: 300px;
-    height: 300px;
+.zsec {
+    width: 600px;
+    height: 600px;
     animation: j_s 60s infinite linear;
-    /* animation: j_s 1s infinite linear; */
     position: absolute;
 }
 
-.zmin1 {
-    width: 300px;
-    height: 300px;
+.zmin {
+    width: 600px;
+    height: 600px;
     animation: j_m 3600s infinite linear;
-    /* animation: j_m 60s infinite linear; */
     position: absolute;
 }
 
-.zhour1 {
-    width: 300px;
-    height: 300px;
+.zhour {
+    width: 600px;
+    height: 600px;
     animation: j_h 43200s infinite linear;
-    /* animation: j_h 720s infinite linear; */
     position: absolute;
-}
-.jsec2 {
-    width: 16px;
-    height: 300px;
-    position: absolute;
-    background: url("../img/imgs.png");
-    left: 50%;
-    margin-left: -8px;
-    animation: j_s 60s infinite linear;
-}
-.jmin2 {
-    width: 16px;
-    height: 300px;
-    position: absolute;
-    background: url("../img/imgm.png");
-    left: 50%;
-    margin-left: -8px;
-    animation: j_m 3600s infinite linear;
-}
-.jhour2 {
-    width: 16px;
-    height: 300px;
-    position: absolute;
-    background: url("../img/imgh.png");
-    left: 50%;
-    margin-left: -8px;
-    animation: j_h 43200s infinite linear;
-}
-.osec3 {
-    animation: j_s 60s infinite linear;
-    transform-origin: 50% 90%;
-}
-.omin3 {
-    animation: j_m 3600s infinite linear;
-    transform-origin: 50% 85%;
-}
-.ohour3 {
-    animation: j_h 43200s infinite linear;
-    transform-origin: 50% 80%;
-}
-.osec4 {
-    transform-origin: 50% 90%;
-}
-.omin4 {
-    transform-origin: 50% 85%;
-}
-.ohour4 {
-    transform-origin: 50% 80%;
 }

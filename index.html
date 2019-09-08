@@ -10,70 +10,16 @@
     </head>
     <body>
         <div class="circle">
-            <div class="zmin1">
-                <div class="jmin1"></div>
+            <div class="zmin">
+                <div class="jmin"></div>
             </div>
-            <div class="zhour1">
-                <div class="jhour1"></div>
+            <div class="zhour">
+                <div class="jhour"></div>
             </div>
-            <div class="zsec1">
-                <div class="jsec1"></div>
+            <div class="zsec">
+                <div class="jsec"></div>
             </div>
-            <h3>CSS Animation+雙DIV<br />表示法</h3>
+            <img src="img/heart.svg">
         </div>
-        <div class="circle">
-            <div class="jmin2"></div>
-            <div class="jhour2"></div>
-            <div class="jsec2"></div>
-            <h3>CSS Animation+圖片<br />表示法</h3>
-        </div>
-        <div class="circle">
-            <div class="jmin1 omin3"></div>
-            <div class="jhour1 ohour3"></div>
-            <div class="jsec1 osec3"></div>
-            <h3>CSS Animation+中心偏移<br />表示法</h3>
-        </div>
-        <div class="circle">
-            <div class="jmin1 omin4"></div>
-            <div class="jhour1 ohour4"></div>
-            <div class="jsec1 osec4"></div>
-            <h3>setInterval+中心偏移<br />表示法</h3>
-            <button id="ctrl" onclick="ctl(this)">STOP</button>
-        </div>
-        <script>
-            document.getElementsByClassName("osec4")[0].style.transform =
-                "rotate(" + x + "deg)";
-            document.getElementsByClassName("omin4")[0].style.transform =
-                "rotate(" + y + "deg)";
-            document.getElementsByClassName("ohour4")[0].style.transform =
-                "rotate(" + z + "deg)";
-            var loop = setInterval(overwritetime, 1000);
-
-            function overwritetime() {
-                time = new Date();
-                pos_s = time.getSeconds();
-                pos_m = time.getMinutes();
-                pos_h = time.getHours();
-                x = pos_s * 6;
-                y = pos_m * 6;
-                z = pos_h * 30 + pos_m * 0.5;
-                document.getElementsByClassName("osec4")[0].style.transform =
-                    "rotate(" + x + "deg)";
-                document.getElementsByClassName("omin4")[0].style.transform =
-                    "rotate(" + y + "deg)";
-                document.getElementsByClassName("ohour4")[0].style.transform =
-                    "rotate(" + z + "deg)";
-            }
-
-            function ctl(who) {
-                if (who.textContent != "PLAY") {
-                    clearInterval(loop);
-                    who.textContent = "PLAY";
-                } else {
-                    loop = setInterval(overwritetime, 1000);
-                    who.textContent = "STOP";
-                }
-            }
-        </script>
     </body>
 </html>
