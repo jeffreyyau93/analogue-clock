@@ -1,72 +1,72 @@
 body {
-    margin: 0;
-    width: 100vw;
-    height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  margin: 0;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .circle {
-    width: 600px;
-    height: 600px;
-    margin: 20px;
-    border-radius: 600px;
-    display: inline-block;
-    overflow: hidden;
-    position: absolute;
+  width: 600px;
+  height: 600px;
+  margin: 20px;
+  border-radius: 600px;
+  display: inline-block;
+  overflow: hidden;
+  position: absolute;
 }
 
 .jsec {
-    width: 10px;
-    height: 50%;
-    background: #f000;
-    border-top: 40px solid #555;
-    position: absolute;
-    left: 50%;
-    /* top: 5%; */
-    margin-left: -5px;
+  width: 10px;
+  height: 50%;
+  background: #f000;
+  border-top: 40px solid #555;
+  position: absolute;
+  left: 50%;
+  /* top: 5%; */
+  margin-left: -5px;
 }
 
 .jmin {
-    width: 15px;
-    height: 45%;
-    background: #0f00;
-    border-top: 40px solid #555;
-    position: absolute;
-    left: 50%;
-    top: 10%;
-    margin-left: -5px;
+  width: 15px;
+  height: 45%;
+  background: #0f00;
+  border-top: 40px solid #555;
+  position: absolute;
+  left: 50%;
+  top: 10%;
+  margin-left: -5px;
 }
 
 .jhour {
-    width: 20px;
-    height: 30%;
-    background: #00f0;
-    border-top: 40px solid #555;
-    position: absolute;
-    left: 50%;
-    top: 20%;
-    margin-left: -5px;
+  width: 20px;
+  height: 30%;
+  background: #00f0;
+  border-top: 40px solid #555;
+  position: absolute;
+  left: 50%;
+  top: 20%;
+  margin-left: -5px;
 }
 
 .zsec {
-    width: 600px;
-    height: 600px;
-    animation: j_s 60s infinite linear;
-    position: absolute;
+  width: 600px;
+  height: 600px;
+  animation: j_s 60s infinite linear;
+  position: absolute;
 }
 
 .zmin {
-    width: 600px;
-    height: 600px;
-    animation: j_m 3600s infinite linear;
-    position: absolute;
+  width: 600px;
+  height: 600px;
+  animation: j_m 3600s infinite linear;
+  position: absolute;
 }
 
 .zhour {
-    width: 600px;
-    height: 600px;
-    animation: j_h 43200s infinite linear;
-    position: absolute;
+  width: 600px;
+  height: 600px;
+  animation: j_h 43200s infinite linear;
+  position: absolute;
 }
